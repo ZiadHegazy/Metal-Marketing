@@ -1,0 +1,83 @@
+.mainDivNav{
+    position: relative;
+    width: 100%;
+    background-color: #F8EDED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    max-width: 100%;
+    position: sticky;
+    z-index: 100;
+    top:0px
+}
+.logoNav{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logoNav>img{
+    width: 20%;
+    height: 90%;
+}
+.navLinks{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: 2vw;
+    align-items: center;
+}
+.navItema{
+    text-decoration: none;
+    color: #000000;
+}
+.navItemSelected{
+    cursor: pointer;
+    background-color: #FF8225;
+    border-bottom: #000000 4px solid;
+    font-size: 1.5rem;
+    display: flex;
+    height: 100%;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    
+    color: white;
+    text-decoration: none;
+}
+.navItem{
+    
+    font-size: 1.5rem;
+    display: flex;
+    height: 100%;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    
+    color: #000000;
+    text-decoration: none;
+}
+
+.navItem:hover{
+    cursor: pointer;
+    background-color: #FF8225;
+    border-bottom: #000000 4px solid;
+    color: white;
+    >a{
+        color: white;
+    }
+    transition: 0.5s;
+}
+.mainLogoLabel{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.orangeLogoLabel{
+    color: #FF8225;
+}
