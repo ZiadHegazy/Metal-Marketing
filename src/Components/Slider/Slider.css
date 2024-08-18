@@ -51,3 +51,26 @@
     }
     transition: 0.5s;
 }
+
+@media screen and (max-width: 600px){
+    .sliderarrowRight{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .sliderarrowLeft{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .sliderarrowRight>.arrow{
+        font-size: 2rem;
+        
+    }
+    .sliderarrowLeft>.arrow{
+        font-size: 2rem;
+        
+    }
+    .mainDivSlider{
+        height: 50%;
+    }
+    
+}

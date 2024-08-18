@@ -1,5 +1,4 @@
 .mainDivNav{
-    position: relative;
     width: 100%;
     background-color: #F8EDED;
     display: flex;
@@ -80,4 +79,44 @@
 }
 .orangeLogoLabel{
     color: #FF8225;
+}
+
+@media screen and (max-width: 600px){
+    .mainDivNav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoNav{
+        width: 100%;
+    }
+    .mainLogoLabel{
+        font-size: 1.5rem;
+    }
+    .navLinksMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navLinksMobileList{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 7vw;
+        >a{
+            text-decoration: underline;
+            color: #000000;
+        }
+    }
+    .navMobileItem{
+        font-size: 1rem;
+
+    }
+    .mainDivNav{
+        position: relative;
+        height: 25%;
+    }
+    
 }

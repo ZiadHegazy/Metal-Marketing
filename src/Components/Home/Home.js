@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 export function Home(){
     return (
-        <div style={{display:"flex",flexDirection:"column",rowGap:"1vh",width:"100%",height:"100%"}}>
+        <div className="bigDiv">
 
         
         <Navbar selected={0} />
