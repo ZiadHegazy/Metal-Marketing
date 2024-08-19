@@ -31,7 +31,7 @@ export function ItemPage(){
                 <Divider orientation="vertical" flexItem />
                 <div className="specifications">
                     <h2>المواصفات</h2>
-                    <table style={{width:"70%"}}>
+                    <table style={{width:"70%",fontSize:"1.2rem"}}>
                         <tr>
                             <td>{details.material}</td>
                             <td> :الخامة</td>
