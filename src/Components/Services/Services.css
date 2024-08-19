@@ -1,0 +1,32 @@
+.maindivService{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: auto;
+}
+
+.bigDiv3{
+    display:flex;
+    flex-direction:column;
+    row-gap:1vh;
+    width:100%;
+    height:100%
+}
+.serviceInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    align-items: end;
+    padding-right: 15px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+
+}

@@ -3,12 +3,13 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './Components/Home/Home';
 import {APIProvider} from '@vis.gl/react-google-maps';
 import { About } from './Components/About/About';
+import { Services } from './Components/Services/Services';
 function App() {
   return (
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About/>} />
-      {/* <Route path="/services" element={<Services />} /> */}
+      <Route path="/services" element={<Services />} />
       
     </Routes>
   );
