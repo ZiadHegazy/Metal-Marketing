@@ -18,9 +18,9 @@ export function Navbar(props){
              { isMobile &&
                     
                         <div className="navLinksMobileList">
-                        <a >                                الرئيسية</a>
-                        <a >                                عن الشركة</a>
-                        <a >                                الخدمات</a>
+                        <a href="/" style={{color: props.selected==0? "#FF8225":"black"}} >                                الرئيسية</a>
+                        <a href="/about" style={{color: props.selected==1? "#FF8225":"black"}} >                                عن الشركة</a>
+                        <a href="/services" style={{color: props.selected==2? "#FF8225":"black"}} >                                الخدمات</a>
                     </div>
                     
             } 
@@ -49,15 +49,6 @@ export function Navbar(props){
                     </div>
                 
             }
-            {/* <div className="navLinks">
-
-                <div className={props.selected==0? "navItemSelected":"navItem"}> <a className={props.selected==0? "navItemSelected":"navItema" } href="/">الرئيسية</a></div>
-                
-                <div className={props.selected==1? "navItemSelected":"navItem"}> <a className={props.selected==1? "navItemSelected":"navItema" } href="/about">عن الشركة</a></div>
-                <div className={props.selected==2? "navItemSelected":"navItem"}><a className={props.selected==2? "navItemSelected":"navItema" } href="/services">الخدمات</a></div>
-                
-
-            </div> */}
         </div>
     )
 }

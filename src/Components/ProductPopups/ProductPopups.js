@@ -36,7 +36,7 @@ export function ProductPopups(){
               zIndex:101,
             },
             popup: {
-              width: 'auto',
+              width: '80%',
               height: '60%',
               position: 'relative',
             },
@@ -44,8 +44,8 @@ export function ProductPopups(){
         
             return (
               <div style={popupStyles.overlay}>
-                <div style={popupStyles.popup}>
-                  <img style={{width:"100%",height:"100%"}} src={images[currentImage].image} />
+                <div style={{...popupStyles.popup,backgroundImage:`url(${images[currentImage].image})`,backgroundSize:"contain",backgroundRepeat:"no-repeat"}} >
+                  {/* <img style={{width:"100%",height:"100%"}} src={images[currentImage].image} /> */}
                   <button style={{position:"absolute",top:"0px",right:"0px",cursor:"pointer"}} onClick={togglePopup}><CloseIcon/></button>
                 </div>
               </div>
@@ -56,8 +56,8 @@ export function ProductPopups(){
 
             {images.map((image,i)=>
                 
-                <div onClick={()=>handlePopup(i)} className="productPopup">
-                <img style={{width:"100%",height:"100%"}} src={image.image} />
+                <div onClick={()=>handlePopup(i)} className="productPopup" style={{backgroundImage:`url(${image.image})`, backgroundSize: 'cover',backgroundRepeat:"no-repeat"}}>
+                {/* <img style={{width:"100%",height:"100%"}} src={image.image} /> */}
                 <div className="labelDivPop">
                     <label>{image.name}</label>
                     <ArrowForwardIosIcon className="arrowPopUp" style={{width:"3rem",height:"3rem"}}  />

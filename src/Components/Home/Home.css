@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     row-gap: 10px;
+    top:15%;
+    position: relative;
     
 }
 
@@ -21,6 +23,9 @@
 @media screen and (max-width: 600px){
     .bigDiv{
         row-gap: 31vh;
+    }
+    .maindivHome{
+        top: 7%;
     }
     
 }

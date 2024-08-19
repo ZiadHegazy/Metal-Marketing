@@ -11,6 +11,7 @@ export function Home(){
 
         
         <Navbar selected={0} />
+        
         <div className="maindivHome">
             <Slider />
             

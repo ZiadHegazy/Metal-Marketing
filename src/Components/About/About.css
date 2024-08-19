@@ -1,0 +1,78 @@
+.maindivAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: auto;
+}
+.aboutInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: #f0f0f0; */
+    width: 98%;
+    column-gap: 2vw;
+    /* padding: 10px; */
+}
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 40%;
+    height:auto;
+
+}
+.aboutMission{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    width: 40%;
+    height: 100%;
+
+}
+
+.countGoal{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 70%;
+    >h1{
+        color:#FF8225;
+    }
+}
+
+.bigDiv2{
+    display:flex;
+    flex-direction:column;
+    row-gap:1vh;
+    width:100%;
+    height:100%
+}
+
+@media screen and (max-width: 600px){
+    .aboutInfo{
+        flex-direction: column;
+        row-gap: 8vh;
+        width: 80%;
+    }
+    .aboutUs{
+        width: 100%;
+        align-items: end;
+    }
+    .aboutMission{
+        width: 100%;
+    }
+    .countGoal{
+        width: 100%;
+    }
+    .bigDiv2{
+        row-gap: 8vh;
+    }   
+    
+}
