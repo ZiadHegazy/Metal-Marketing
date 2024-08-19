@@ -5,18 +5,27 @@ import { Slider } from "../Slider/Slider"
 import "./Services.css"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import { useNavigate } from "react-router-dom"
+
 export function Services(){
+    const navigate=useNavigate()
     return (
         <div className="bigDiv3">
 
         
-        <Navbar selected={0} />
+        <Navbar selected={2} />
         
         <div className="maindivService">
             <div className="serviceInfo">
                 <h1>اقسام خدماتنا</h1>
                 <div className="service">
-                    <h2>تشكيل المعادن</h2>
+                    <h2>تشغيل المعادن</h2>
+                    <div onClick={()=>navigate("/item",{state:1})} className="serviceItems">
+                        <p>خراطة معادن</p>
+                        <ArrowBackIosIcon className="arrowServiceItem"/>
+                    </div>
+
                     
                 </div>
             </div>

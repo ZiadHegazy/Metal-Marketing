@@ -30,3 +30,21 @@
     align-items: end;
 
 }
+.serviceItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 1vw;
+    font-size: 1rem;
+}
+.arrowServiceItem{
+    color: #FF8225;
+}
+
+.serviceItems:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    color: #FF8225;
+    
+}
